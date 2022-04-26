@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+ 
+ <title>Web Technologies Online Quiz</title>
+
+ <link rel="icon" href="/assets/img/bg-masthead.jpeg" type="image/icon type">
+ <meta charset=UTF-8 />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="styles.css"/>
+ <script type="text/javascript">
+    var now = new Date().getTime();
+    var elapsed = new Date().getTime() - now;
+    document.getElementById("timer").innerHtml = elapsed;
+    if (elapsed > 300000 /*milliseconds in 5 minutes*/) {
+      alert ("5 minutes up!");
+      //take whatever action you want!
+    }
+  </script>
+ 
+ <style>
+a{
+        text-decoration: none;
+        width: 80px;
+        display: inline-block;
+        text-align: center;
+        color: rgb(20, 1, 1);
+        background:  #46d668;
+        padding: 7px 10px;
+        border-radius: 4px;  
+        font-size: 19px;
+    }
+    a:hover{
+		background: rgba(129, 232, 109, 0.884);
+    }
+
+</style>
+</head>
+ 
+<body>
+
+    <body background='qwallpaper.jpeg'>
+<center>
+ <h1>Web Technologies Final Project </h1>
+ 
+ <form action="q2.html" method="get, post" id="onlinequiz">
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="timer">Time Left:</div>
+   
+    
+ 
+                    <h3>Who was elected president of the United States in 2017?</h3>
+                    <div>
+                        <input type="radio" name="q1" id="q1" value="A" />
+                        <label for="q1">A) Barrack Obama </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" id="q1" value="B" />
+                        <label for="q1">B) Donald Trump </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" id="q1" value="C" />
+                        <label for="q1">C) Snoop Dog </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" id="q1" value="D" />
+                        <label for="q1">D) George Bush</label>
+                    </div>
+            
+    
+    <div>
+        <a href="index.html">&#8592; Back</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="q2.html">Next &rarr;</a>
+    </center>
+    </div>
+ </form>
+ 
+ </div>
+ <script src="js/scripts.js"></script>
+ 
+</body>
+ 
+</html>
